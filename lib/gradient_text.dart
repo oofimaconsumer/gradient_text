@@ -11,6 +11,7 @@ class GradientText extends StatelessWidget {
   final Gradient gradient;
   final TextStyle style;
   final TextAlign textAlign;
+  final double textScaleFactor;
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +25,7 @@ class GradientText extends StatelessWidget {
         style: (style == null)
             ? TextStyle(color: Colors.white)
             : style.copyWith(color: Colors.white),
+        textScaleFactor: textScaleFactor ?? MediaQuery.textScaleFactorOf(context),
       ),
     );
   }

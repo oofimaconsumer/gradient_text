@@ -2,10 +2,14 @@ library gradient_text;
 import 'package:flutter/material.dart';
 
 class GradientText extends StatelessWidget {
-  GradientText(this.data,
-      {@required this.gradient,
-      this.style,
-      this.textAlign = TextAlign.left});
+
+  GradientText(
+    this.data, {
+    @required this.gradient,
+    this.style,
+    this.textAlign = TextAlign.left,
+    this.textScaleFactor,
+  });
 
   final String data;
   final Gradient gradient;
